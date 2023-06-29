@@ -36,7 +36,7 @@ class LeasesController < ApplicationController
     end
   
     def lease_params
-      params.permit(:rent)
+      params.permit(:rent, :apartment_id, :tenant_id)
     end
   
     def render_not_found_response
